@@ -16,6 +16,10 @@
 
 }
 
+.nav-btn {
+    transition: all 300ms linear;
+}
+
 .line-2 {
     width: 22px;
     height: 8px;
@@ -61,7 +65,7 @@
 
 .box:hover {
     box-shadow: 0px 8px 35px 0px #0000001A;
-    border: none;
+    border: 1px solid transparent;
 
 }
 
@@ -82,6 +86,27 @@
     color: #666666;
 }
 
+.hover-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    transition: all 300ms ease-in-out;
+    background-color: rgb(180, 115, 115);
+}
+
+.hover-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+.hover-color:hover{
+    color: blue;
+}
+
+
+
 .go-check {
     font-family: Poppins;
     font-size: 16px;
@@ -91,7 +116,7 @@
     background-color: #2C49FE;
     color: white;
     border-radius: 23px;
-    border: none;
+    border: 1px solid #2C49FE;
     transition: all 300ms linear;
 }
 
@@ -196,9 +221,6 @@
 
 }
 
-.nav-link:hover {
-    font-weight: 500;
-}
 
 .gap10 {
     gap: 10px;
@@ -246,7 +268,7 @@
 
 .home {
     font-family: Poppins;
-    font-size: var(--fs-16);
+    font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     text-align: left;
@@ -352,8 +374,8 @@
     margin-top: 15px;
 }
 
-.show-box {
-    height: 100%;
+.show-box { 
+    height: 47px;
     background: #2D3CAE87;
     font-family: "Poppins", sans-serif;
     font-size: 17px;
@@ -379,7 +401,8 @@
 
     transform: rotateX(45deg);
 }
-.mb-33{
+
+.mb-33 {
     margin-bottom: 33px;
 }
 
@@ -414,10 +437,15 @@
         right: 2%;
     }
 
+    .navv-icon {
+        cursor: pointer;
+    }
+
     label[for="nav-icon"]>span {
         width: 100%;
         height: 4px;
-        background-color: rebeccapurple;
+        background-color: rgb(255, 255, 255);
+        cursor: pointer;
 
     }
 
@@ -425,15 +453,46 @@
         color: #FFFFFF;
     }
 
+    .box {
+        padding: 25px;
+    }
+    .home{
+        font-size: 14px;
+    }
+    .events{
+        font-size: 44px;
+
+    }
 
 }
+
 @media (max-width: 568px) {
-    .logo1{
+    .logo1 {
         width: 80px;
         height: 60px;
     }
-    .Events{
+
+    .Events {
         font-size: 30px;
     }
+
+    .box {
+        padding: 20px;
+    }
+    .home{
+        font-size: 12px;
+    }
+    .events{
+        font-size: 40px;
+        
+    }
+    .pt-68{
+        padding-top: 40px;
+    }
+    .show-box{
+        height: 100px;
+    }
+
+
 
 }
