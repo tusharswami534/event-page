@@ -101,7 +101,8 @@
     width: 100%;
     left: 0;
 }
-.hover-color:hover{
+
+.hover-color:hover {
     color: blue;
 }
 
@@ -186,7 +187,7 @@
 }
 
 .bg-img {
-    background-image: url(/assets/img/png/Group\ 103.png);
+    background-image: url(/assets/img/png/Group-103.png);
     margin-bottom: 67px;
     background-repeat: no-repeat;
     object-fit: cover;
@@ -374,18 +375,24 @@
     margin-top: 15px;
 }
 
-.show-box { 
-    height: 47px;
+.show-2 {
+    height: 80%;
     background: #2D3CAE87;
-    font-family: "Poppins", sans-serif;
-    font-size: 17px;
+    font-family: var(--poppins);
+    font-size: var();
     font-weight: 700;
     line-height: 18px;
     letter-spacing: 0em;
     text-align: center;
     color: white;
+    transition: all 300ms linear;
 
 }
+
+.show-2:hover {
+    background-color: red;
+}
+
 
 .show-box:hover {
     background-color: white;
@@ -456,10 +463,12 @@
     .box {
         padding: 25px;
     }
-    .home{
+
+    .home {
         font-size: 14px;
     }
-    .events{
+
+    .events {
         font-size: 44px;
 
     }
@@ -479,17 +488,21 @@
     .box {
         padding: 20px;
     }
-    .home{
+
+    .home {
         font-size: 12px;
     }
-    .events{
+
+    .events {
         font-size: 40px;
-        
+
     }
-    .pt-68{
+
+    .pt-68 {
         padding-top: 40px;
     }
-    .show-box{
+
+    .show-box {
         height: 100px;
     }
 
