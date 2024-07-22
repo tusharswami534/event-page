@@ -3,6 +3,9 @@
 .pt-68 {
     padding-top: 100px;
 }
+.pb-95{
+    padding-bottom: 95px;
+}
 
 
 
@@ -187,11 +190,12 @@
 }
 
 .bg-img {
-    background-image: url(/assets/img/png/Group-103.png);
-    margin-bottom: 67px;
-    background-repeat: no-repeat;
-    object-fit: cover;
+    background-image: url(/event-page/assets/img/png/hero-section-header.png);
+    /* margin-bottom: 67px; */
+    
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .Events {
